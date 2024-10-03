@@ -21,6 +21,3 @@ def pascal_triangle(n):
     for i in range(n):
         create_pascal(triangle, 0, i)
     return triangle
-
-
-print(pascal_triangle(0))
