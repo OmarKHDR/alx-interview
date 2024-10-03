@@ -3,6 +3,7 @@
 pascal triangle
 """
 
+
 def create_pascal(arr, begin, end):
     """
     create each level by recurssion
@@ -28,6 +29,7 @@ def pascal_triangle(n):
     for i in range(n):
         create_pascal(triangle, 0, i)
     return triangle
+
 
 if __name__ == '__main__':
     print(pascal_triangle(5))
