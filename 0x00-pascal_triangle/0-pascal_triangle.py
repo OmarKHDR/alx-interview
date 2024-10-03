@@ -8,6 +8,8 @@ def create_pascal(arr, begin, end):
     """
     create each level by recurssion
     """
+    if end == 0:
+        arr.append([])
     if begin == end:
         arr[end].append(1)
         return
@@ -20,10 +22,11 @@ def create_pascal(arr, begin, end):
 
 
 def pascal_triangle(n):
-    """ a function looping through each level of pascal triangle
-        return: the final triangle
     """
-    triangle = [[],]
+    a function looping through each level of pascal triangle
+    return: the final triangle
+    """
+    triangle = []
     if len(triangle) >= n:
         return triangle[:n]
     for i in range(n):
