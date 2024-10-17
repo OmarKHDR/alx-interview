@@ -16,8 +16,8 @@ def get_primes(n, arr):
 
 def minOperations(n):
     """how does it work?
-    using some math it shows that sum of prime factors
-    how to get prim factors?
+    using some math it shows that the sum of prime factors of number
+    is the answer how to get prim factors?
     its numbers less than sqrt of n and are primes and mult to n
     """
     if n <= 1 or int(n) != n:
