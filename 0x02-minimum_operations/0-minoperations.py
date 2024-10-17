@@ -13,6 +13,7 @@ def get_primes(n, arr):
     else:
         arr.append(n)
 
+
 def minOperations(n):
     """how does it work?
     using some math it shows that sum of prime factors
@@ -24,10 +25,3 @@ def minOperations(n):
     arr = []
     get_primes(n, arr)
     return sum(arr)
-
-
-n = 4
-print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
-
-n = 100
-print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
