@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#<IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>
 import signal
 import time
 import sys
@@ -10,7 +9,10 @@ def get_status_code(line, status):
     find_code = re.search("\s\d{3}\s", line)
     if find_code:
         status_code = find_code.group().strip()
-        status[status_code] = status[status_code] + 1 if status_code in status else 1
+        if status_code in status:
+            status[status_code] = status[status_code] + 1
+        else:
+            status[status_code] = 1
 
 
 status = {}
