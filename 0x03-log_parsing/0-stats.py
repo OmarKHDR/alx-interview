@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""this is a docs dont care about it
+its multi line now
+"""
 import signal
 import time
 import sys
@@ -6,6 +9,9 @@ import re
 
 
 def get_status_code(line, status):
+    """this is a docs dont care about it
+    its multi line now
+    """
     find_code = re.search("\s\d{3}\s", line)
     if find_code:
         status_code = find_code.group().strip()
