@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' This is a docs dont care about itw'''
+"""This script is doing things"""
 import signal
 import time
 import sys
@@ -7,8 +7,7 @@ import re
 
 
 def get_status_code(line, status):
-    ''' This is a docs dont care about it line now
-    '''
+    """This script is doing things"""
     find_code = re.search("\s\d{3}\s", line)
     if find_code:
         status_code = find_code.group().strip()
