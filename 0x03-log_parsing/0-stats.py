@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""this is a docs dont care about itw"""
+'''this is a docs dont care about itw'''
 import signal
 import time
 import sys
