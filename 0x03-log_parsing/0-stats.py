@@ -4,6 +4,7 @@ import signal
 import time
 import sys
 import re
+"""script that reads stdin line by line and computes metrics:"""
 
 
 def get_status_code(line, status):
