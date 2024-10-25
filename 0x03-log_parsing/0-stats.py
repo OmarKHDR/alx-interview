@@ -7,7 +7,8 @@ import re
 
 
 def get_status_code(line, status):
-    ''' This is a docs dont care about it line now'''
+    ''' This is a docs dont care about it line now
+    '''
     find_code = re.search("\s\d{3}\s", line)
     if find_code:
         status_code = find_code.group().strip()
