@@ -1,16 +1,30 @@
 #!/usr/bin/python3
-"""
-This script is doing things
+"""This is the summary line
+
+This is the further elaboration of the docstring. Within this section,
+you can elaborate further on details as appropriate for the situation.
+Notice that the summary and the elaboration is separated by a blank new
+line.
 """
 import signal
 import time
 import sys
 import re
-""" script that reads stdin line by line and computes metrics: """
-
+"""This is the summary line
+0-state.py
+This is the further elaboration of the docstring. Within this section,
+you can elaborate further on details as appropriate for the situation.
+Notice that the summary and the elaboration is separated by a blank new
+line.
+"""
 
 def get_status_code(line, status):
-    """ This script is doing things """
+    """This is the summary line get_status_code
+    This is the further elaboration of the docstring. Within this section,
+    you can elaborate further on details as appropriate for the situation.
+    Notice that the summary and the elaboration is separated by a blank new
+    line.
+    """
     find_code = re.search("\s\d{3}\s", line)
     if find_code:
         status_code = find_code.group().strip()
