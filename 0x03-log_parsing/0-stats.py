@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""This script is doing things"""
+""" This script is doing things """
 import signal
 import time
 import sys
 import re
-"""script that reads stdin line by line and computes metrics:"""
+""" script that reads stdin line by line and computes metrics: """
 
 
 def get_status_code(line, status):
-    """This script is doing things"""
+    """ This script is doing things """
     find_code = re.search("\s\d{3}\s", line)
     if find_code:
         status_code = find_code.group().strip()
