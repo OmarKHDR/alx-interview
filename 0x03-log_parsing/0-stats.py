@@ -10,13 +10,7 @@ import signal
 import time
 import sys
 import re
-"""This is the summary line
-0-state.py
-This is the further elaboration of the docstring. Within this section,
-you can elaborate further on details as appropriate for the situation.
-Notice that the summary and the elaboration is separated by a blank new
-line.
-"""
+
 
 def get_status_code(line, status):
     """This is the summary line get_status_code
