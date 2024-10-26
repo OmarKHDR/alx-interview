@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" This script is doing things """
+"""
+This script is doing things
+"""
 import signal
 import time
 import sys
