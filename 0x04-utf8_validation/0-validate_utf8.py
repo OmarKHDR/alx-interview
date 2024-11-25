@@ -21,7 +21,7 @@ def validUTF8(data):
         return False
     if byte_count == 1:
         return validUTF8(data[1:])
-    for i in range(byte_count):
+    for i in range(1, byte_count-1):
         if data[index + i] & 0b11000000 != 0b10000000:
             return False
     return validUTF8(data[byte_count - 1:])
