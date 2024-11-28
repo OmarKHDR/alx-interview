@@ -1,21 +1,19 @@
 #!/usr/bin/python3
 """
-Given a list of coin denominations and a target amount,
-this function finds the minimum number of coins
-required to make the target amount.
-If it is not possible to make the amount, it returns -1.
+An optimized solution for the coin change
+problem using dynamic programming
+with space complexity reduced to O(amount).
 """
 
-
 def makeChange(coins, amount):
-    """Initialize the DP array with a value
-    representing infinity (impossible case)
+    """We use a large number to represent infinity (unreachable state)
     """
     dp = [float('inf')] * (amount + 1)
-    dp[0] = 0  # Base case: 0 coins needed to make amount 0
-    # Iterate over each coin
+    dp[0] = 0  # Base case: 0 coins are needed to make amount 0
+
+    # Iterate through all coin denominations
     for coin in coins:
         for i in range(coin, amount + 1):
             dp[i] = min(dp[i], dp[i - coin] + 1)
-    # If dp[amount] is still infinity, return -1 (impossible case)
+
     return dp[amount] if dp[amount] != float('inf') else -1
