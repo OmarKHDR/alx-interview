@@ -4,6 +4,8 @@
 
 
 def findChange(coin, amount, arr):
+    """ This also is documented
+    """
     if amount == 0:
         return 0  # Base case: no coins needed for amount 0
     if amount < 0:
@@ -26,11 +28,8 @@ def findChange(coin, amount, arr):
     return mini
 
 def makeChange(coin, amount):
+    """ This is documented for real
+    """
     arr = [1000000] * (amount + 1)  # Initialize the memoization array
     res = findChange(coin, amount, arr)
     return res if res != 1000000 else -1  # Return -1 if no solution
-
-# Example usage
-coins = [1, 10, 5]
-amount = 9
-print(makeChange(coins, amount))  # Output: -1 (Impossible to make 9 with [1, 10, 5])
