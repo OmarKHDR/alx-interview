@@ -4,7 +4,7 @@
 from typing import List
 
 
-def island_perimeter(grid:List[List[int]]):
+def island_perimeter(grid: List[List[int]]):
     perimeter: int = 0
     for row in range(len(grid)):
         for ele in range(len(grid[row])):
@@ -20,4 +20,3 @@ def island_perimeter(grid:List[List[int]]):
                 if ele < (len(grid[row]) - 1):
                     perimeter -= grid[row][ele+1]
     return perimeter
-
