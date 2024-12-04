@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 """THis is supposed to be documentation
 """
-from typing import List
 
 
-def island_perimeter(grid: List[List[int]]) -> int:
+def island_perimeter(grid):
     """ THisis Doc DOc ODc
     """
     perimeter: int = 0
     for row in range(len(grid)):
         for ele in range(len(grid[row])):
-            # print(grid[row][ele], end="")
             if grid[row][ele] == 1:
                 perimeter += 4
                 if row > 0:
