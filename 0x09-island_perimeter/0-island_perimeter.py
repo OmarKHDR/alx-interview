@@ -4,7 +4,9 @@
 from typing import List
 
 
-def island_perimeter(grid: List[List[int]]):
+def island_perimeter(grid: List[List[int]]) -> int:
+    """ THisis Doc DOc ODc
+    """
     perimeter: int = 0
     for row in range(len(grid)):
         for ele in range(len(grid[row])):
