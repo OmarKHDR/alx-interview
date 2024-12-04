@@ -6,7 +6,7 @@
 def island_perimeter(grid):
     """ THisis Doc DOc ODc
     """
-    perimeter: int = 0
+    perimeter = 0
     for row in range(len(grid)):
         for ele in range(len(grid[row])):
             if grid[row][ele] == 1:
