@@ -8,13 +8,15 @@ def isWinner(x, nums):
     """
     ben = 0
     maria = 0
-    for n in nums:
-        if n < 2:
+    if x < 1:
+        return None
+    for n in range(x):
+        if nums[n] < 2:
             ben += 1
             continue
-        arr = [x for x in range(1, n + 1)]
+        arr = [x for x in range(1, nums[n] + 1)]
         i = 1
-        while i <= n:
+        while i <= nums[n]:
             if len(arr) == 1:
                 if i % 2 != 0:
                     ben += 1
